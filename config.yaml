@@ -118,6 +118,15 @@ monitors:
     followRedirect: true
     linkable: false
 
+  - id: www.baryonbib.org/search
+    name: Search Service
+    description: 'Search millions of journal papers, billions of figures in them, thousands of scholars, journals, institutions, reading lists, research topics, and more.'
+    url: 'https://www.baryonbib.org/search'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
   - id: www.baryonbib.org/library
     name: Library Service
     description: 'www.baryonbib.org/library'
@@ -136,14 +145,14 @@ monitors:
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/writing/wiki
-    name: Wiki Service
-    description: 'www.baryonbib.org/writing/wiki'
-    url: 'https://www.baryonbib.org/api/wiki'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/writing/wiki
+#    name: Wiki Service
+#    description: 'www.baryonbib.org/writing/wiki'
+#    url: 'https://www.baryonbib.org/api/wiki'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
   - id: www.baryonbib.org/mailing
     name: Email Service
@@ -154,14 +163,14 @@ monitors:
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/mailing/workspace
-    name: BaryonBib Workspace
-    description: 'www.baryonbib.org/mailing/workspace'
-    url: 'https://www.baryonbib.org/api/workspace'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/mailing/workspace
+#    name: BaryonBib Workspace
+#    description: 'www.baryonbib.org/mailing/workspace'
+#    url: 'https://www.baryonbib.org/api/workspace'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
   - id: www.baryonbib.org/bms
     name: Bib Metrics
@@ -181,50 +190,50 @@ monitors:
 #    followRedirect: true
 #    linkable: false
 
-  - id: www.baryonbib.org/bms-journal
-    name: Bib Metrics for Journal
-    description: 'Measure the quality of journals.'
-    url: 'https://www.baryonbib.org/bms-journal'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/bms-journal
+#    name: Bib Metrics for Journal
+#    description: 'Measure the quality of journals.'
+#    url: 'https://www.baryonbib.org/bms-journal'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
-  - id: www.baryonbib.org/bms-institution
-    name: Bib Metrics for institution
-    description: 'Measure the impact of research institutions.'
-    url: 'https://www.baryonbib.org/bms-institution'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/bms-institution
+#    name: Bib Metrics for institution
+#    description: 'Measure the impact of research institutions.'
+#    url: 'https://www.baryonbib.org/bms-institution'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
-  - id: www.baryonbib.org/open-data
-    name: BaryonBib Open Data Service
-#    description: ''
-    url: 'https://www.baryonbib.org/open-data'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/open-data
+#    name: BaryonBib Open Data Service
+#    description: 'www.baryonbib.org/open-data'
+#    url: 'https://www.baryonbib.org/open-data'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
-  - id: www.baryonbib.org/open-bibliography
-    name: BaryonBib Open Bibliography Service
-    description: 'www.baryonbib.org/open-bibliography'
-    url: 'https://www.baryonbib.org/open-bibliography'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/open-bibliography
+#    name: BaryonBib Open Bibliography Service
+#    description: 'www.baryonbib.org/open-bibliography'
+#    url: 'https://www.baryonbib.org/open-bibliography'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
-  - id: www.baryonbib.org/open-library
-    name: BaryonBib Open Library Service
-    description: 'www.baryonbib.org/open-library'
-    url: 'https://www.baryonbib.org/open-library'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/open-library
+#    name: BaryonBib Open Library Service
+#    description: 'www.baryonbib.org/open-library'
+#    url: 'https://www.baryonbib.org/open-library'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
   - id: www.baryonbib.org/community/news
     name: BaryonBib News
@@ -289,14 +298,14 @@ monitors:
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/books
-    name: BaryonBib Books
-    description: 'Discover scientific books and more.'
-    url: 'https://www.baryonbib.org/book'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/books
+#    name: BaryonBib Books
+#    description: 'Discover scientific books and more.'
+#    url: 'https://www.baryonbib.org/book'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
   - id: www.baryonics.org
     name: Baryonics Website
