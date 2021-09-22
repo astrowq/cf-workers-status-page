@@ -107,7 +107,7 @@ monitors:
 #    method: GET
 #    expectStatus: 200
 #    linkable: false
-  -
+
 ### in-app sub-services
   - id: www.baryonbib.org/discover
     name: Discover Service
@@ -172,14 +172,14 @@ monitors:
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/bms-scholar
-    name: Bib Metrics for Scholar
-    description: 'Measure the impact of scholars.'
-    url: 'https://www.baryonbib.org/bms-scholar'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+#  - id: www.baryonbib.org/bms-scholar
+#    name: Bib Metrics for Scholar
+#    description: 'Measure the impact of scholars.'
+#    url: 'https://www.baryonbib.org/bms-scholar'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true
+#    linkable: false
 
   - id: www.baryonbib.org/bms-journal
     name: Bib Metrics for Journal
@@ -226,28 +226,28 @@ monitors:
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/news
+  - id: www.baryonbib.org/community/news
     name: BaryonBib News
     description: 'BaryonBib News provides global scientific and technical news, fresh and professionally written.'
-    url: 'https://www.baryonbib.org/news'
+    url: 'https://www.baryonbib.org/community/news'
     method: GET
     expectStatus: 200
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/community/journal-club
+  - id: www.baryonbib.org/community/club
     name: Journal Club Service
-    description: 'www.baryonbib.org/community/journal-club'
-    url: 'www.baryonbib.org/community/journal-club'
+    description: 'www.baryonbib.org/community/club'
+    url: 'www.baryonbib.org/community/club'
     method: GET
     expectStatus: 200
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/columns
+  - id: www.baryonbib.org/community/columns
     name: BaryonBib Columns
     description: 'Science communication, done it professionally.'
-    url: 'https://www.baryonbib.org/columns'
+    url: 'https://www.baryonbib.org/community/columns'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -262,28 +262,28 @@ monitors:
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/events
+  - id: www.baryonbib.org/community/events
     name: BaryonBib Events
     description: 'Discover academic events: conferences, seminars, workshops etc.'
-    url: 'https://www.baryonbib.org/events'
+    url: 'https://www.baryonbib.org/community/events'
     method: GET
     expectStatus: 200
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/jobs
+  - id: www.baryonbib.org/community/jobs
     name: BaryonBib Jobs
     description: 'Discover academic jobs across the world.'
-    url: 'https://www.baryonbib.org/jobs'
+    url: 'https://www.baryonbib.org/community/jobs'
     method: GET
     expectStatus: 200
     followRedirect: true
     linkable: false
 
-  - id: www.baryonbib.org/videos
+  - id: www.baryonbib.org/community/videos
     name: BaryonBib Jobs
     description: 'Discover scientific videos, talk recordings, and more.'
-    url: 'https://www.baryonbib.org/videos'
+    url: 'https://www.baryonbib.org/community/videos'
     method: GET
     expectStatus: 200
     followRedirect: true
