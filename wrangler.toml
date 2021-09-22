@@ -1,4 +1,4 @@
-name = "cf-workers-status-page"
+name = "baryonbib-status-page"
 workers_dev = true
 account_id = ""
 type = "webpack"
