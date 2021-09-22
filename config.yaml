@@ -2,7 +2,7 @@ settings:
   title: 'BaryonBib Status'
   url: 'https://status.baryonbib.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 7 # number of days you want to display in histogram
+  daysInHistogram: 60 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -39,12 +39,55 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: www.baryonics.org
-    name: Baryonics Website
-    description: 'www.baryonics.org'
-    url: 'https://www.baryonics.org/'
+  - id: www.baryonid.com
+    name: BaryonID
+    description: 'www.baryonid.com'
+    url: 'https://www.baryonid.com/'
     method: GET
     expectStatus: 200
+
+  - id: partnership.baryonbib.com
+    name: Partnership Portal
+    description: 'partnership.baryonbib.com'
+    url: 'https://partnership.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: admin.baryonbib.com
+    name: Subscription Admin Portal
+    description: 'admin.baryonbib.com'
+    url: 'https://admin.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: share.baryonbib.com
+    name: Share Service
+    description: 'share.baryonbib.com'
+    url: 'https://share.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: meeting.baryonbib.com
+    name: Meeting Service
+    description: 'meeting.baryonbib.com'
+    url: 'https://meeting.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: ads.baryonbib.com
+    name: Ads Transparency
+    description: 'ads.baryonbib.com'
+    url: 'https://ads.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: transparency.baryonbib.com
+    name: Transparency Report
+    description: 'transparency.baryonbib.com'
+    url: 'https://transparency.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
 
   - id: www.baryonics.org
     name: Baryonics Website
