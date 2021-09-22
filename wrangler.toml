@@ -1,12 +1,12 @@
 name = "baryonbib-status-page"
-workers_dev = true
+workers_dev = false
 account_id = ""
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-09-22"
 
 [triggers]
-crons = ["*/5 * * * *"]
+crons = ["*/1 * * * *"]
 
 [site]
 bucket = "out"
