@@ -30,7 +30,7 @@ monitors:
     url: 'https://api.baryonics.org'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: core.baryonbib.org
     name: BaryonBib Core
@@ -38,6 +38,7 @@ monitors:
     url: 'https://core.baryonbib.org/'
     method: GET
     expectStatus: 200
+    linkable: false
 
   - id: www.baryonid.com
     name: BaryonID
@@ -45,6 +46,7 @@ monitors:
     url: 'https://www.baryonid.com/'
     method: GET
     expectStatus: 200
+    followRedirect: true
 
   - id: partnership.baryonbib.com
     name: Partnership Portal
@@ -66,6 +68,7 @@ monitors:
     url: 'https://share.baryonbib.com/'
     method: GET
     expectStatus: 200
+    linkable: false
 
   - id: meeting.baryonbib.com
     name: Meeting Service
@@ -73,6 +76,7 @@ monitors:
     url: 'https://meeting.baryonbib.com/'
     method: GET
     expectStatus: 200
+    linkable: false
 
   - id: ads.baryonbib.com
     name: Ads Transparency
@@ -88,6 +92,211 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: beta.baryonbib.org
+    name: BaryonBib Web Beta
+    description: 'beta.baryonbib.org'
+    url: 'https://beta.baryonbib.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+#  - id: api.baryonics.org
+#    name: Baryonics API
+#    description: 'api.baryonics.org'
+#    url: 'https://api.baryonics.org'
+#    method: GET
+#    expectStatus: 200
+#    linkable: false
+  -
+### in-app sub-services
+  - id: www.baryonbib.org/discover
+    name: Discover Service
+    description: 'Discover service provides discovery and recommendations for scientific papers, reading lists, research topics, scholars, journals, and books.'
+    url: 'https://www.baryonbib.org/discover'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/library
+    name: Library Service
+    description: 'www.baryonbib.org/library'
+    url: 'https://www.baryonbib.org/api/library'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/writing
+    name: Writing Service
+    description: 'www.baryonbib.org/writing'
+    url: 'https://www.baryonbib.org/api/writing'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/writing/wiki
+    name: Wiki Service
+    description: 'www.baryonbib.org/writing/wiki'
+    url: 'https://www.baryonbib.org/api/wiki'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/mailing
+    name: Email Service
+    description: 'www.baryonbib.org/mailing'
+    url: 'https://www.baryonbib.org/api/email'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/mailing/workspace
+    name: BaryonBib Workspace
+    description: 'www.baryonbib.org/mailing/workspace'
+    url: 'https://www.baryonbib.org/api/workspace'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/bms
+    name: Bib Metrics
+    description: 'Measure the impact of journal papers.'
+    url: 'https://www.baryonbib.org/bms'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/bms-scholar
+    name: Bib Metrics for Scholar
+    description: 'Measure the impact of scholars.'
+    url: 'https://www.baryonbib.org/bms-scholar'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/bms-journal
+    name: Bib Metrics for Journal
+    description: 'Measure the quality of journals.'
+    url: 'https://www.baryonbib.org/bms-journal'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/bms-institution
+    name: Bib Metrics for institution
+    description: 'Measure the impact of research institutions.'
+    url: 'https://www.baryonbib.org/bms-institution'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/open-data
+    name: BaryonBib Open Data Service
+#    description: ''
+    url: 'https://www.baryonbib.org/open-data'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/open-bibliography
+    name: BaryonBib Open Bibliography Service
+    description: 'www.baryonbib.org/open-bibliography'
+    url: 'https://www.baryonbib.org/open-bibliography'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/open-library
+    name: BaryonBib Open Library Service
+    description: 'www.baryonbib.org/open-library'
+    url: 'https://www.baryonbib.org/open-library'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/news
+    name: BaryonBib News
+    description: 'BaryonBib News provides global scientific and technical news, fresh and professionally written.'
+    url: 'https://www.baryonbib.org/news'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/community/journal-club
+    name: Journal Club Service
+    description: 'www.baryonbib.org/community/journal-club'
+    url: 'www.baryonbib.org/community/journal-club'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/columns
+    name: BaryonBib Columns
+    description: 'Science communication, done it professionally.'
+    url: 'https://www.baryonbib.org/columns'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/community/discuss
+    name: BaryonBib Discuss
+    description: 'Discuss academic paper friendly.'
+    url: 'https://www.baryonbib.org/community/discuss'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/events
+    name: BaryonBib Events
+    description: 'Discover academic events: conferences, seminars, workshops etc.'
+    url: 'https://www.baryonbib.org/events'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/jobs
+    name: BaryonBib Jobs
+    description: 'Discover academic jobs across the world.'
+    url: 'https://www.baryonbib.org/jobs'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/videos
+    name: BaryonBib Jobs
+    description: 'Discover scientific videos, talk recordings, and more.'
+    url: 'https://www.baryonbib.org/videos'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: www.baryonbib.org/books
+    name: BaryonBib Books
+    description: 'Discover scientific books and more.'
+    url: 'https://www.baryonbib.org/book'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
 
   - id: www.baryonics.org
     name: Baryonics Website
