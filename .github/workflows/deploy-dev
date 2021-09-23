@@ -1,6 +1,8 @@
-name: Deploy
+name: Deploy Dev
 
-on: [pull-request]
+on:
+  pull_request:
+    branches: [ main ]
 
 jobs:
   deploy:
