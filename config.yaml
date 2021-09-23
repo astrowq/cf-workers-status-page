@@ -156,7 +156,7 @@ monitors:
     linkable: false
 
   - id: www.baryonbib.org/mailing/workspace
-    name: BaryonBib Workspace
+    name: Workspace Service
     description: 'www.baryonbib.org/mailing/workspace'
     url: 'https://www.baryonbib.org/api/workspace'
     method: GET
@@ -192,7 +192,7 @@ monitors:
     linkable: false
 
   - id: www.baryonbib.org/bms-institution
-    name: Bib Metrics for institution
+    name: Bib Metrics for Institution
     description: 'Measure the impact of research institutions.'
     url: 'https://www.baryonbib.org/bms-institution'
     method: GET
