@@ -247,7 +247,7 @@ monitors:
   - id: www.baryonbib.org/community/club
     name: Journal Club Service
     description: 'www.baryonbib.org/community/club'
-    url: 'www.baryonbib.org/community/club'
+    url: 'https://www.baryonbib.org/community/club'
     method: GET
     expectStatus: 200
     followRedirect: true
