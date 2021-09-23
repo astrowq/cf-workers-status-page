@@ -27,8 +27,7 @@ async function getKvMonitors(kvMonitorsKey) {
     `https://api.cloudflare.com/client/v4/accounts/${accountId}/storage/kv/namespaces/${namespaceId}/values/${kvMonitorsKey}`,
     init,
   )
-  const json = await res.json()
-  return json
+  return await res.json()
 }
 
 async function saveKVMonitors(kvMonitorsKey, data) {
@@ -41,12 +40,10 @@ async function saveKVMonitors(kvMonitorsKey, data) {
     body: JSON.stringify(data),
   }
 
-  const res = await fetch(
+  return await fetch(
     `https://api.cloudflare.com/client/v4/accounts/${accountId}/storage/kv/namespaces/${namespaceId}/values/${kvMonitorsKey}`,
     init,
   )
-
-  return res
 }
 
 function loadConfig() {
