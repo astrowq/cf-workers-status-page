@@ -27,7 +27,7 @@ monitors:
   - id: api.baryonics.org
     name: Baryonics API
     description: 'api.baryonics.org'
-    url: 'https://api.baryonics.org'
+    url: 'https://api.baryonics.org/prod/v1'
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
@@ -35,7 +35,7 @@ monitors:
   - id: core.baryonbib.org
     name: BaryonBib Core
     description: 'core.baryonbib.org'
-    url: 'https://core.baryonbib.org/'
+    url: 'https://core.baryonbib.org/prod/v1'
     method: GET
     expectStatus: 200
     linkable: false
@@ -59,29 +59,6 @@ monitors:
     name: Subscription Admin Portal
     description: 'admin.baryonbib.com'
     url: 'https://admin.baryonbib.com/'
-    method: GET
-    expectStatus: 200
-
-  - id: share.baryonbib.com
-    name: Share Service
-    description: 'share.baryonbib.com'
-    url: 'https://share.baryonbib.com/'
-    method: GET
-    expectStatus: 200
-    linkable: false
-
-  - id: meeting.baryonbib.com
-    name: Meeting Service
-    description: 'meeting.baryonbib.com'
-    url: 'https://meeting.baryonbib.com/'
-    method: GET
-    expectStatus: 200
-    linkable: false
-
-  - id: ads.baryonbib.com
-    name: Ads Transparency
-    description: 'ads.baryonbib.com'
-    url: 'https://ads.baryonbib.com/'
     method: GET
     expectStatus: 200
 
