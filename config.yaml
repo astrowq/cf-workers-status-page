@@ -270,7 +270,7 @@ monitors:
   - id: www.baryonbib.org/books
     name: BaryonBib Books
     description: 'Discover scientific books and more.'
-    url: 'https://www.baryonbib.org/book'
+    url: 'https://www.baryonbib.org/books'
     method: GET
     expectStatus: 200
     followRedirect: true
