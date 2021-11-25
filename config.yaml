@@ -69,10 +69,10 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: beta.baryonbib.org
+  - id: beta.baryonbib.com
     name: BaryonBib Web Beta
-    description: 'beta.baryonbib.org'
-    url: 'https://beta.baryonbib.org/'
+    description: 'beta.baryonbib.com'
+    url: 'https://beta.baryonbib.com/'
     method: GET
     expectStatus: 200
     linkable: true
