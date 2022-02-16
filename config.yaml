@@ -99,7 +99,7 @@ monitors:
   - id: www.baryonbib.org/library
     name: Library Service
     description: 'www.baryonbib.org/library'
-    url: 'https://www.baryonbib.org/api/library'
+    url: 'https://www.baryonbib.org/library'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -108,7 +108,7 @@ monitors:
   - id: www.baryonbib.org/writing
     name: Writing Service
     description: 'www.baryonbib.org/writing'
-    url: 'https://www.baryonbib.org/api/writing'
+    url: 'https://www.baryonbib.org/writing'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -117,7 +117,7 @@ monitors:
   - id: www.baryonbib.org/writing/wiki
     name: Wiki Service
     description: 'www.baryonbib.org/writing/wiki'
-    url: 'https://www.baryonbib.org/api/wiki'
+    url: 'https://www.baryonbib.org/writing/wiki'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -126,7 +126,7 @@ monitors:
   - id: www.baryonbib.org/mailing
     name: Email Service
     description: 'www.baryonbib.org/mailing'
-    url: 'https://www.baryonbib.org/api/email'
+    url: 'https://www.baryonbib.org/mailing'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -135,7 +135,7 @@ monitors:
   - id: www.baryonbib.org/mailing/workspace
     name: Workspace Service
     description: 'www.baryonbib.org/mailing/workspace'
-    url: 'https://www.baryonbib.org/api/workspace'
+    url: 'https://www.baryonbib.org/mailing/workspace'
     method: GET
     expectStatus: 200
     followRedirect: true
