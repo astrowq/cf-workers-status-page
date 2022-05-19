@@ -55,6 +55,20 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: events.baryonbib.com
+    name: Events Portal
+    description: 'events.baryonbib.com'
+    url: 'https://events.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: reports.baryonbib.com
+    name: Baryon Reports Database
+    description: 'reports.baryonbib.com'
+    url: 'https://reports.baryonbib.com/'
+    method: GET
+    expectStatus: 200
+
   - id: admin.baryonbib.com
     name: Subscription Admin Portal
     description: 'admin.baryonbib.com'
@@ -85,7 +99,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/search
     name: Search Service
@@ -94,7 +108,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/library
     name: Library Service
@@ -103,7 +117,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/writing
     name: Writing Service
@@ -112,34 +126,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
-
-  - id: www.baryonbib.org/writing/wiki
-    name: Wiki Service
-    description: 'www.baryonbib.org/writing/wiki'
-    url: 'https://www.baryonbib.org/writing/wiki'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
-
-  - id: www.baryonbib.org/mailing
-    name: Email Service
-    description: 'www.baryonbib.org/mailing'
-    url: 'https://www.baryonbib.org/mailing'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
-
-  - id: www.baryonbib.org/mailing/workspace
-    name: Workspace Service
-    description: 'www.baryonbib.org/mailing/workspace'
-    url: 'https://www.baryonbib.org/mailing/workspace'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/bms
     name: Bib Metrics
@@ -148,7 +135,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/bms-scholar
     name: Bib Metrics for Scholar
@@ -157,7 +144,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/bms-journal
     name: Bib Metrics for Journal
@@ -166,7 +153,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/bms-institution
     name: Bib Metrics for Institution
@@ -175,7 +162,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/open-data
     name: Open Data Service
@@ -184,7 +171,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/open-bibliography
     name: Open Bibliography Service
@@ -193,7 +180,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/open-library
     name: Open Library Service
@@ -202,7 +189,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/community/club
     name: Journal Club Service
@@ -220,7 +207,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/community/columns
     name: BaryonBib Columns
@@ -229,7 +216,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/community/discuss
     name: BaryonBib Discuss
@@ -238,7 +225,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/community/events
     name: BaryonBib Events
@@ -247,7 +234,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/community/jobs
     name: BaryonBib Jobs
@@ -256,7 +243,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: www.baryonbib.org/community/videos
     name: BaryonBib Videos
@@ -265,16 +252,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
-  - id: www.baryonbib.org/books
-    name: BaryonBib Books
-    description: 'Discover scientific books and more.'
-    url: 'https://www.baryonbib.org/books'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
 
   - id: www.baryonics.org
     name: Baryonics Website
@@ -282,3 +261,12 @@ monitors:
     url: 'https://www.baryonics.org/'
     method: GET
     expectStatus: 200
+    
+  - id: search.baryonics.org
+    name: Baryonics Search
+    description: 'search.baryonics.org'
+    url: 'https://search.baryonics.org'
+    method: GET
+    expectStatus: 200
+    linkable: true
+    
