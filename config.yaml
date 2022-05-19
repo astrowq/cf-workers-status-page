@@ -30,7 +30,7 @@ monitors:
     url: 'https://api.baryonics.org/prod/v1'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: false
 
   - id: core.baryonbib.org
     name: BaryonBib Core
@@ -89,7 +89,7 @@ monitors:
     url: 'https://beta.baryonbib.com/'
     method: GET
     expectStatus: 200
-    linkable: true
+    linkable: false
 
 ### in-app sub-services
   - id: www.baryonbib.org/discover
