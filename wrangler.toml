@@ -1,4 +1,4 @@
-name = "baryonbib-status-page"
+name = "status-page"
 workers_dev = false
 account_id = ""
 type = "webpack"
